@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<resources>
+  <string name="app_name">Rain Compatibility Tools</string>
+  <string name="description">A targeted startup resource recovery for Rain on Android 17.</string>
+  <string name="title">Rain startup recovery</string>
+  <string name="summary">Retry resource creation once if Android returns no resources while opening Rain. Normal launches remain unchanged.</string>
+  <string name="enable">Recover missing activity resources</string>
+  <string name="restart_note">Root is required to apply or restore. This uses Rain&#x2019;s existing LSPatch engine; do not enable Vector injection for Rain. Changes take effect the next time Rain starts naturally; this app does not close it. Clearing Rain&#x2019;s cache removes the repair; apply it again if needed.</string>
+  <string name="status_title">Diagnostics</string>
+  <string name="status_waiting">Waiting for Rain to start</string>
+  <string name="status_ready">Loaded and ready</string>
+  <string name="status_disabled">Recovery is off</string>
+  <string name="status_unsupported">Unsupported Rain version or Android framework</string>
+  <string name="status_setup_failed">Could not install recovery</string>
+  <string name="status_repaired">Missing resources recovered</string>
+  <string name="status_retry_failed">Resources still unavailable after one retry</string>
+  <string name="counts">Recovered: %1$d &#xB7; Unrecovered: %2$d</string>
+  <string name="last_updated">Updated: %1$s</string>
+  <string name="limitations">Designed for Rain 344.13 (344013) on Android 17. Earlier native LSPatch crashes are separate and are not repaired by this module. No messages or account data are collected.</string>
+  <string name="licenses">Open-source licenses</string>
+  <string name="close">Close</string>
+  <string name="version">Version %1$s</string>
+  <string name="app_license">App &#xB7; Apache License 2.0</string>
+  <string name="dependency_licenses">Libraries and notices</string>
+  <string name="operation_failed">Could not apply recovery</string>
+  <string name="applied">Saved. The change takes effect on Rain&#x2019;s next natural startup.</string>
+  <string name="read_diagnostics">Read diagnostic events</string>
+  <string name="diagnostics_unavailable">No diagnostic file is available yet, or Root access was denied. Events are recorded after Rain&#x2019;s next natural startup.</string>
+  <string name="event_attached">Application attached</string>
+  <string name="event_activity_start">Creating first activity context</string>
+  <string name="event_activity_ready">First activity context created</string>
+  <string name="event_activity_failed">First activity context failed</string>
+  <string name="event_exit">Previous exit &#xB7; reason %1$d &#xB7; status %2$d</string>
+  <string name="event_unknown">Diagnostic event</string>
+  <string name="config_on">Recovery configured · applies on Rain’s next natural startup</string>
+  <string name="config_off">Recovery not configured</string>
+</resources>
