@@ -42,4 +42,4 @@ Diagnostics stay in Rain’s private `files/raincompat/` directory. They record 
 
 ## License and development
 
-[Apache License 2.0](LICENSE). Component license information is available in the app. See [developer documentation](docs/development.md) and [validation notes](docs/validation.md).
+[MIT License](LICENSE). Component license information is available in the app. See [developer documentation](docs/development.md) and [validation notes](docs/validation.md).
