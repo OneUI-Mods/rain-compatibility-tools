@@ -43,3 +43,5 @@ Diagnostics stay in Rain’s private `files/raincompat/` directory. They record 
 ## License and development
 
 [MIT License](LICENSE). Component license information is available in the app. See [developer documentation](docs/development.md) and [validation notes](docs/validation.md).
+
+[Build environment / ビルド環境](docs/build-environment.md)

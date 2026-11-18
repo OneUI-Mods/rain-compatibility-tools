@@ -43,3 +43,5 @@ Rainが展開する `cache/lspatch/dev.raincord.xposed/3404327306.apk` に、こ
 ## ライセンス・開発
 
 [MIT License](LICENSE)。アプリ内にライブラリ別のライセンス表示があります。ビルドと仕組みは[開発者向け文書](docs/development.md)、検証範囲は[検証記録](docs/validation.md)を参照してください。
+
+[Build environment / ビルド環境](docs/build-environment.md)

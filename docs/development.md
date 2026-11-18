@@ -25,3 +25,5 @@ Applying/restoring updates the next startup’s cache only. It deliberately does
 ## Privacy and release
 
 Keep device logs, third-party APKs/decompilation, keys, passwords, and generated patched caches outside Git and releases. `third_party/components.tsv` is checked against resolved dependencies and license texts are bundled. Release packaging verifies the signer, target SDK, non-debuggable variant, DEX payload equality and checksums. Japanese and English READMEs must remain in sync.
+
+[Build environment / ビルド環境](build-environment.md)
