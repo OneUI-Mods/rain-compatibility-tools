@@ -20,7 +20,7 @@ For a signed APK, set `ONEUI_SIGNING_PROPERTIES` to a private UTF-8 Java propert
 
 `Diagnostics` writes bounded events only at startup, first activity creation, and an actual retry. It records previous process exit metadata from ApplicationExitInfo on the next launch. It has no polling thread and no long-running service. The helper reads these private records only on explicit user action through Root, avoiding package-visibility dependencies between Rain and the helper.
 
-Applying/restoring updates the next startup’s cache only. It deliberately does not start or stop Rain. A running Rain keeps the DEX already loaded by LSPatch in memory.
+Applying or restoring the embedded loader updates the next startup’s cache. It does not start or stop Rain. Once this payload has loaded, the existing hook callbacks can obtain a new resource recovery implementation from the companion APK while Rain keeps running. The loader checks the companion’s installed signing certificate and version before replacing the implementation. Activity scoping, the one-attempt limit, and native exceptions remain enforced by the resident hook. The companion must be visible to Rain through Android package discovery. Changes to the legacy hook adapter itself take effect on the next normal Rain startup.
 
 ## Privacy and release
 

@@ -70,8 +70,7 @@ class RainResourceHook : IXposedHookLoadPackage {
                             )
                                 return
                             val result =
-                                ResourceRetry.recover<Resources>(
-                                    null,
+                                RetryPolicyRuntime.recover(
                                     {
                                         try {
                                             XposedBridge.invokeOriginalMethod(
@@ -125,7 +124,10 @@ class RainResourceHook : IXposedHookLoadPackage {
                     object : XC_MethodHook() {
                         override fun afterHookedMethod(call: MethodHookParam) {
                             if (call.hasThrowable()) return
-                            (call.args[0] as? Context)?.let { Diagnostics.attach(it) }
+                            (call.args[0] as? Context)?.let {
+                                Diagnostics.attach(it)
+                                RetryPolicyRuntime.start(it)
+                            }
                             Log.i(TAG, "READY existing LSPatch; resource retry installed")
                         }
                     },

@@ -19,8 +19,8 @@ android {
         applicationId = "dev.ryuya.raincompat"
         minSdk = 37
         targetSdk = 37
-        versionCode = 2
-        versionName = "0.1.1"
+        versionCode = 4
+        versionName = "0.1.3"
     }
     buildFeatures { buildConfig = true }
     signingConfigs {
